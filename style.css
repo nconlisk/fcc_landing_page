@@ -1,0 +1,232 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+  }
+  
+  body {
+    
+    max-width: 100%;
+    background-color:gray;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #ffffff;
+    margin: auto;
+    
+  }
+  
+  header{
+    position: fixed;
+    height: 8rem;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+  }
+  
+   
+  li{
+    list-style: none;
+    
+  }
+  
+  nav > ul {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;    
+    
+  }
+  
+  
+  
+  .nav-link {
+    text-decoration: none;
+    padding: 1rem; /* This controls spacing of menu */
+    
+  }
+
+  
+  
+  
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  h2 {
+    padding-top: 90px;   /* This corrects for fixed header */
+    font-size: 3.25rem;
+  }
+  
+  @media (max-width: 800px) {
+    
+    #nav-bar{
+        padding: 0  0 0 1rem; /* This controls how far menu is from logo */
+    }
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+    h2 {
+        padding-top: 90px;
+        font-size: 2.75rem;
+    }
+    header{
+      height: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    nav > ul {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column; 
+    
+  }
+  }
+  
+  
+  .container{
+   padding: 10rem 10rem 10rem 10rem;
+   margin: auto;
+   max-width: 50%;
+    
+  }
+  iframe{
+    display:block;
+    margin: auto;
+  }
+   
+  
+  #contactus {
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    background-color:LightBlue;
+    color: #333;
+    
+    
+  }
+  @media (max-width: 800px) {
+    #contactus{
+      max-width: 55%;
+    }
+  }
+  
+  input[type="email"]{
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+ #product_options{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 1rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.1rem;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+    flex
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+   #product_options{
+     margin-top: 60px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+}
+
+  
+  footer {
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: white;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  
+  footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li {
+    padding: 0 1rem;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    padding: 0 1rem 0.5rem;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+  }
+  
+  </style>
